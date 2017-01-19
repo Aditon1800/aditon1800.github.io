@@ -1,0 +1,793 @@
+@media screen and (min-width: 1501px) {
+  .custom-cont {
+    width: 1500px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header-content {
+    padding-left: 3%;
+  }
+
+  .header-title {
+    font-size: 28px;
+    padding: 1em 0 .5em;
+    line-height: 32px;
+  }
+
+  .header-items {
+    padding: 2em 0 4em;
+  }
+
+  .header-item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .ph-number {
+    font-size: 20px;
+    left: 78.5%;
+  }
+
+  .cond-block {
+    padding: 0 40px 40px;
+  }
+
+  .cont-desc-title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .tab-pane_second .item-row .line-up-right::before {
+    left: 83%;
+  }
+
+  .tab-pane_third .item-row .line-up::before {
+    left: 80%;
+  }
+
+  .condition-item {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px 26px 8px 0;
+  }
+
+  .person-desc .idea {
+    margin-left: 30%;
+    line-height: 26px;
+  }
+
+  .person .person-fb {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .ph-number {
+    font-size: 17px;
+    line-height: 16px;
+    left: 80%;
+  }
+
+  .header-title {
+    font-size: 24px;
+    padding: 1em 0 .5em;
+    line-height: 36px;
+  }
+
+  .header-items {
+    padding: 4em 0 6em;
+  }
+
+  .header-item {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .header-content {
+    padding-left: 2%;
+    width: 100%;
+  }
+
+  .header-slider {
+    display: none;
+  }
+
+  #header {
+    background: url('../img/middle-bg.jpg') no-repeat right top;
+    background-size: cover;
+  }
+
+  .why-us-block1,
+  .why-us-block2,
+  .why-us-block3,
+  .why-us-block4 {
+    padding-left: 30px;
+  }
+
+  .slide-university .btn {
+    margin: 20px 0;
+  }
+
+  .tab-pane_third .item-row {
+    display: block;
+  }
+  
+  .tab-pane_third .item-row div{
+    float: right;
+  }
+
+  .tab-pane_third .item-row div:last-of-type.line-right::after {
+    content: '';
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    width: 4px;
+    height: 100px;
+    margin-left: -2px;
+    background-color: #f5f5f5;
+    z-index: -2;
+  }
+
+ .slide-university .text {
+  font-size: 20px;
+  line-height: 26px;
+ }
+
+  .tabs-scheme .tab-item {
+    font-size: 18px;
+    padding: 10px 6px;
+  }
+
+  #enrollment .desc {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  #enrollment .desc span {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .benefit-block {
+    width: 100%;
+  }
+
+  .person-desc {
+    margin-bottom: 20px;
+  }
+
+ .person-desc .idea {
+  margin-left: 10%;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 24px;
+ }
+
+  .person .person-fb {
+    height: 100px;
+  }
+
+ .faq-list__question {
+  font-size: 20px;
+ }
+
+  #question {
+    width: 84%;
+  }
+}
+
+@media (max-width: 767px) {
+  #schemes,
+  #benefit-after,
+  #feedback,
+  #popular-questions,
+  #form-visible,
+  #footer,
+  .condition-item,
+  #header:before,
+  #header:after,
+  #why-us:before,
+  #schemes:before,
+  #schemes:after,
+  #popular-questions:before,
+  #popular-questions:after  {
+    display: none;
+  }
+
+  .mob-social {
+    display: block;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .ph-number {
+    position: static;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 15%;
+    font-size: 18px;
+    line-height: 32pxx;
+  }
+
+  .ph-number br {
+    font-size: 8px;
+    line-height: 14px;
+  }
+
+  .ph-number b {
+    display: none;
+  }
+
+  .header-content {
+    float: none;
+    width: 100%;
+  }
+
+  .logo-desc {
+    display: none;
+  }
+
+  .sec-title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .btn-sl {
+    font-size: 12px !important;
+    line-height: 12px !important;
+    padding: 10px 20px !important;
+  }
+
+  .btn-custom {
+    font-size: 14px !important;
+    line-height: 12px !important;
+    padding: 15px 30px !important;
+  }
+
+  #why-us {
+    padding: 35px 0;
+  }
+
+  .why-us-block1,
+  .why-us-block2,
+  .why-us-block3,
+  .why-us-block4 {
+    height: auto;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 10px;
+    background-position: center 13px;
+    border: 2px solid #ccc;
+    text-align: center;
+  }
+
+  .why-us-block1:after,
+  .why-us-block2:after,
+  .why-us-block3:after,
+  .why-us-block4:after {
+    content: none;
+  }
+
+  #why-us .why-us-list {
+    display: none;
+    padding-bottom: 10px;
+    padding: 0 15% 10px;
+  }
+
+  .why-us-title {
+    padding-top: 62px;
+    font-size: 20px;
+  }
+
+  .why-us-item {
+    font-size: 13px;
+    list-style-type: none;
+    text-align: left;
+  }
+
+  .why-us-title .icon-title {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+
+  }
+
+  .why-us-title .icon-title {
+    display: inline-block;
+  }
+
+  .cond-block {
+    padding: 0 0 40px;
+  }
+
+  .cont-desc-title,
+  .cont-desc-title:nth-child(2),
+  .cont-desc-title:nth-child(3) {
+    text-align: center;
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+
+  #universities {
+    padding: 20px 0 50px;
+  }
+
+  .universities_sec-title {
+      margin-bottom: 25px;
+  }
+
+#universities .title {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+ .slide-university {
+  margin-bottom: 50px;
+ }
+
+  .slide-university .text{
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .slider-university-desc {
+    height: 800px !important;
+  }
+
+  .prev-btn {
+    width: 120px;
+  }
+
+  .prev-btn:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .click-prev {
+    float: left;
+  }
+
+  .click-zoom {
+    display: none;
+  }
+
+  .click-next {
+    float: right;
+  }
+
+  .enrollment-wrap {
+    display: block;
+    text-align: center;
+  }
+
+  #enrollment .desc span {
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .why-us-block1,
+  .why-us-block2,
+  .why-us-block3,
+  .why-us-block4 {
+    min-height: 329px;
+  }
+
+  #why-us .why-us-list {
+    display: block !important;
+  }
+
+   .universities_sec-title br {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 550px) {
+  #conditions .sec-title  {
+    line-height: 1.2;
+    padding-top: 39px;
+    padding-bottom: 26px;
+    margin: 0;
+  }
+
+  .btn-sl {
+    font-size: 12px !important;
+    line-height: 12px !important;
+    padding: 9px 12px !important;
+  }
+
+  #header {
+    background: url('../img/mobile-bg.jpg') no-repeat right top;
+    background-size: cover;
+  }
+
+  #header .header-content {
+    width: 100%;
+    float: none;
+    padding: 0 15px;
+  }
+
+  #header .logo-desc {
+    display: none;
+  }
+  
+  .header-desc {
+    padding: 25px 0 0 0;
+  }
+
+  .header-desc .header-title {
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .header-desc .header-p {
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 48px;
+  }
+
+  .header-items {
+    padding: 10px 0 35px;
+  }
+
+  .header-item {
+    -webkit-background-size: 4%;
+    background-size: 4%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+  }
+
+  .logo {
+    width: 77px;
+    height: 32px;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  .ph-number {
+    font-size: 14px;
+    padding-left: 15%;
+  }
+
+  .ph-number span {
+    font-size: 10px;
+  }
+
+  .why-us-block1,
+  .why-us-block2,
+  .why-us-block3,
+  .why-us-block4 {
+    width: 100%;
+    padding-bottom: 0;
+    background-size: 43px 43px;
+    background-position: center 10px;
+  }
+
+  .why-us-title {
+    padding-top: 45px;
+    font-size: 16px;
+  }
+
+  .slide-university {
+    padding: 20px 0 20px;
+  }
+
+  .slide-university .inner-wrap-desc {
+    display: block;
+    text-align: center;
+  }
+
+  .inner-wrap-desc .text:first-child {
+    display: none;
+  }
+
+  .inner-wrap-desc .text:nth-child(2) {
+    display: block;
+  }
+
+  .inner-wrap-desc .text {
+    width: 100%;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .slide-university .btn {
+    margin: 10px 0;
+  }
+
+  .uni-wrap-bottom {
+    padding: 20px 0;
+  }
+
+  .cond-block {
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
+
+  #enrollment .desc {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  #enrollment .desc span {
+    font-size: 12px;
+    line-height: 30px;
+    padding-bottom: 30px;
+  }
+
+  .btn-sl {
+    font-size: 12px !important;
+    line-height: 12px !important;
+    padding: 9px 12px !important;
+  }
+
+  .btn-l {
+    width: 240px;
+    height: 40px;
+    font-size: 11px;
+    padding: 0 !important;
+  }
+
+  #universities {
+    padding: 20px 0 10px;
+  }
+
+  .slide-university {
+    margin-bottom: 0;
+  }
+
+  .no-text {
+    display: none;
+  }
+
+  .inner-wrap-desc br {
+    display: none;
+  }
+
+  .slide-university .text{
+    font-size: 12px;
+    line-height: 14px;
+    padding-right: 15px;
+  }
+
+  #conditions {
+    padding-top: 0;
+  }
+
+  .cont-desc-title {
+    display: none;
+  }
+
+  .cont-desc-title_mob {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #2c2c2c;
+    text-align: center;
+    background-color: #f6f6f6;
+    margin: 0;
+    padding: 14px 0;
+  }
+
+  .cond-sh1:before,
+  .cond-sh2:before,
+  .cond-sh3:before {
+    content: none;
+  }
+
+  #enrollment {
+    padding: 40px 0;
+  }
+
+  .enrollment-wrap {
+    display: block;
+    text-align: center;
+  }
+
+  #enrollment .desc {
+    font-size: 14px;
+  }
+
+  #enrollment .desc span {
+    padding: 10px 35px 20px;
+    line-height: 20px;
+  }
+
+  #enrollment .btn-custom {
+    width: 240px;
+    font-size: 12px;
+  }
+  
+  .slider-university-desc {
+    height: 560px !important;
+  }
+
+  .popup-window, 
+  #popup-window {
+    /*display: none;*/
+    background-color: whitesmoke;
+  }
+
+  .popup-window .btn-close,
+  #popup-window .btn-close {
+    display: block!important;
+  }
+  
+  .popup-window .title,
+  #popup-window .title {
+    display: none;
+  }
+
+  .popup-window .container .row:first-child,
+  #popup-window .container .row:first-child {
+    padding-bottom: 0;
+  }
+
+  .popup-window .col-md-8,
+  .popup-window .col-md-4,
+  #popup-window .col-md-8,
+  #popup-window .col-md-4 {
+    padding: 0 25px 20px;
+  }
+
+ .mb-form_no-content {
+    display: none;
+  }
+
+  .popup-title {
+    font-size: 14px;
+    line-height: 14px;
+    padding-bottom: 5px;
+  }
+
+  #popup-window .col-md-4 .popup-title,
+  .popup-window .col-md-4 .popup-title {
+    padding-left: 0;
+  }
+
+  .popup-desc,
+  .popup-item {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  #popup-window ul,
+  .popup-window ul {
+    padding: 0;
+  }
+
+  .popup-item {
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  #popup-window .btn-custom,
+  .popup-window.popup-button {
+      margin: 20px auto 40px ;
+  }
+
+  #popup-btn {
+    margin: 20px auto 40px ;
+  }
+
+  .modal-form {
+    padding: 20px 0 70px;
+  }
+
+  .modal-form_title {
+    font-size: 14px;
+  }
+
+  .modal-form .input,
+  .modal-form .select {
+    height: 30px;
+    font-size: 11px;
+  }
+
+  .select-drop label {
+    font-size: 11px;
+    padding-top: 5px;
+  }
+
+  .btn-modal-form {
+    width: 230px;
+    font-size: 11px;
+  }
+
+  .select-block:last-of-type {
+    margin-bottom: 15px;
+  }
+
+  .step-line {
+    margin-bottom: 15px;
+  }
+
+  .modal-form .step-line_item {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .modal-form .input {
+    width: 90%;
+  }
+
+  .modal-form {
+    left: 0;
+    right: 0;
+  }
+
+  .select-block {
+    width: 90%;
+  }
+
+  .slider-university-nav {
+    padding: 10px 0;
+  }
+
+  .slider-university-desc {
+    height: 580px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .slider-university-nav::after {
+    width: 90px;
+    height: 95px;
+    background: url('../img/pt-icons/slide-select-mob.png') no-repeat center;
+    z-index: 10;
+  }
+
+  .slick-slide img {
+    width: 85px!important;
+    height: 85px!important;
+  }
+
+  .slider-university-nav {
+    padding: 0;
+  }
+
+  .slider-uni-wrapper .slide-university img {
+    width: 100%!important;
+    height: 100%!important;
+  }
+
+  .slider-university-desc {
+    height: 520px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .slider-university-nav::after {
+    width: 64px;
+    height: 68px;
+    background: url('../img/pt-icons/slide-select-mini.png') no-repeat center;
+    z-index: 50;
+  }
+
+  .slider-university-desc {
+    height: 460px !important;
+  }
+
+  .slick-initialized .slick-slide {}
+
+  .slick-slide img {
+    width: 60px!important;
+    height: 60px!important;
+  }
+}

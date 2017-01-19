@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compitable" content="IE=edge"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <title>Староселье</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <!-- [if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  -->
+  <!-- [endif]-->
+  <body>
+    <!-- Header-->
+    <div class="container-fluid">
+      <header class="header">
+        <div class="container">
+          <div class="content">
+            <div class="header__logo"><img src="img/logo.png" class="img-responsive"/></div>
+            <div class="header__table-logo"><img src="img/table-logo.jpg" class="img-responsive"/></div>
+            <p class="header__desc"> Вы можете заказать<br/>нашу продукцию по телефону</p>
+            <div class="header__phone">+7 4822 71-01-81</div>
+            <p class="header__desc"> или воспользоваться<br/>формой он-лайн заказа ниже</p>
+          </div>
+        </div>
+      </header>
+    </div>
+    <!-- Main content-->
+    <section class="main-content">
+      <div class="container gutter main-content--height">
+        <div class="main-content__title">Заказ коробочки</div>
+        <div class="main-content__tab-nav">
+          <div class="tab-nav__step1 tab--active"><span class="step-number">Шаг1</span><span class="step-desc">Ознакомтесь <br/>с составом</span></div>
+          <div class="tab-nav__step2"><span class="step-number">Шаг2</span><span class="step-desc">Выберете<br/>кол-во упаковок</span></div>
+          <div class="tab-nav__step3"><span class="step-number">Шаг3</span><span class="step-desc">Заполните<br/>форму доставки</span></div>
+        </div>
+        <!-- Tab wrapper-->
+        <div class="tab__wrapper">
+          <!-- Tab block1-->
+          <article class="tab1">
+            <h2 class="tab__title">Что входит в набор:</h2>
+            <div class="tab__list-wrap">
+              <!--list left-->
+              <ul class="tab__list--left">
+                <li class="tab__list-item">Филей сыровяленый..............150 гр</li>
+                <li class="tab__list-item">Карбонат сыровяленый.......350 гр</li>
+                <li class="tab__list-item">Окорок сыровяленый...........200 гр</li>
+                <li class="tab__list-item">Колбаса «Особенная».................300 гр</li>
+              </ul>
+              <!--list right-->
+              <ul class="tab__list--right">
+                <li class="tab__list-item">Шейка ветчинная.....................300 гр</li>
+                <li class="tab__list-item">Индейка сыровяленая ..........150 гр</li>
+                <li class="tab__list-item">Тушенка из индейки..............400 гр</li>
+                <li class="tab__list-item"><span class="text--italic">Итого...........................................1,850 гр</span></li>
+              </ul>
+            </div>
+            <h3 class="tab__total"><span class="text--italic">Цена — 2500</span><span class="text-rob">&#8381;</span></h3>
+            <div class="tab__total-img"><img src="img/tab-img1.jpg" alt="set" class="img-responsive"/></div><span class="tab__warning">* Товар на фото может отличаться от доставленного</span>
+          </article>
+          <!-- Tab block2-->
+          <article class="tab2">
+            <h2 class="tab__title">Количество упаковок</h2>
+            <div class="tab__prod-block">
+              <div class="block-img"><img src="img/tab-img2.1.jpg" alt="closed-box" class="img-responsive prod-block__img1"/></div>
+              <div class="prev-img__wrap">
+                <div class="prev-img__icon icon-overlay"><img src="img/tab-mini-img2.1.jpg" alt="closed-box--mini" class="img-responsive prod-block__prev-img1"/>
+                  <div class="icon-overlay"></div>
+                </div>
+                <div class="prev-img__icon"><img src="img/tab-mini-img2.jpg" alt="open-box--mini" class="img-responsive prod-block__prev-img2"/>
+                  <div class="icon-overlay"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tab__ordering-block">
+              <div class="ordering-block__counter">
+                <div class="counter-buttons"><span class="btn-up"></span><span class="btn-down"></span></div>
+                <input type="text" readonly="readonly" value="1" class="counter-label"/>
+                <div class="counter-units"><span>шт.</span></div>
+              </div>
+              <div class="ordering-block__item"><span class="ordering-block__item-box"></span></div>
+              <div class="ordering-block__total"><span class="ordering-block__total-title">Итого:</span><span data-target="amount" class="ordering-block__total-amount">2500</span><span class="ordering-block__total-cur"><span class="text-rob">&#8381;</span></span></div>
+            </div>
+          </article>
+          <article class="tab3">
+            <h2 class="tab__title">Заполните форму
+              <form id="form" action="mail.php" method="POST">
+                <div class="form">
+                  <input type="text" name="name" placeholder="Ваше имя" required="required" class="input"/>
+                  <input type="text" name="adress" placeholder="Адрес доставки" required="required" class="input"/>
+                  <input type="text" name="phone" placeholder="Контактный номер" required="required" class="input"/>
+                  <div class="total-info">
+                    <div class="ordering-block__sum"><span class="ordering-block__unit">1</span><span class="ordering-block__unit-title">упаковок</span></div>
+                    <div class="ordering-block__total"><span data-target="first-amount" class="ordering-block__total-amount">2500</span><span class="ordering-block__total-cur"><span class="text-rob">&#8381;</span></span></div>
+                  </div>
+                  <button class="btn btn-send">Отправить</button>
+                </div>
+              </form>
+            </h2>
+          </article>
+          <button data-target="btn-next" class="btn">Далее</button>
+        </div>
+        <div class="popup"><span class="popup-close"></span>
+          <h1 class="popup__title">Спасибо!</h1>
+          <p class="popup__desc">Ваш заказ успешно оформлен,<br/>наши менеджери перезвонят вам в течении<br/>15 минут для подверждения покупки.</p>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="content">
+          <h1 class="footer__title">Настоящие фермерские продукты!</h1>
+          <p class="footer__copy">2016 &copy; Староселье</p>
+        </div>
+      </div>
+    </footer>
+    <!--Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</head>
