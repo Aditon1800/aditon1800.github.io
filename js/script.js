@@ -12,11 +12,13 @@ $(document).ready(function() {
 // Trigger
 
 (function() {
-  var $triggerList = $('.header-navigation__list');
+  var $triggerList = $('.header-navigation__list'),
+        $headerTrigger = $('.header-trigger');
 
 
   $('.header-trigger').click(function() {
     $triggerList.toggleClass('toggle-class');
+    $headerTrigger.toggleClass('trigger-bg');
   });
   $(window).resize(function() {
     if($(this).width < 767) {
@@ -27,8 +29,8 @@ $(document).ready(function() {
   });
 
 $('[data-target^="#"]').click(function() {
-  $triggerList.removeClass(
-    'toggle-class');
+  $triggerList.removeClass('toggle-class');
+  $headerTrigger.removeClass('trigger-bg');
 });
 }());
 

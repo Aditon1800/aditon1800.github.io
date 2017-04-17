@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang=en>
 <head>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 <meta charset="UTF-8"/>
 <meta http-equiv=X-UA-Compitable content="IE=edge"/>
 <meta name=viewport content="width=device-width, initial-scale=1.0"/>
@@ -18,7 +19,7 @@
 <header data-target=panel class=header>
 <div class=container>
 <nav class=header-navigation>
-<h1 class=header-navigation__title>My Resume</h1>
+<h1 class=header-navigation__title><span class="text--orange">My</span> Resume</h1>
 <button class="btn header-trigger"><span class=header-trigger__line></span><span class=header-trigger__line></span><span class=header-trigger__line></span></button>
 <ul class=header-navigation__list>
 <ll class=header-navigation__list-item><a href=#about-me data-target=#about-me>Обо мне</a></ll>
@@ -79,7 +80,7 @@
 <div class=about-me__info-block1>
 <ul class=about-me__desc-list>
 <li class=about-me__desc-list__item>Качества:
-<p> Люблю учиться и учусь постоянно, занимаясь самообразованием.<br/>Самостоятельно нахожу информацию для решения различных задач, не имею шаблонов, готов рассматривать различные варианты и альтернативы.<br/>Умею быстро анализировать ситуацию, принимать необходимые решения, возлагая за них на себя полную ответственность, все стараюсь выполнять в оговоренные сроки(как правило даже раньше).<br/>Выдерживаю высокие эмоциональные нагрузки, в критических ситуациях всегда сохраняю спокойствие.Быстро нахожу общий язык с людьми для решения необходимых задач, умею слышать и слушать, адаптируюсь в командной работе, в коллективе.<br/>Максимально честен и общителен, презираю лицемерие, соответственно, сам таковым не являюсь.<br/>Не пью, не курю, Я за здравый и трезвый образ жизни и мышления!</p>
+<p> Люблю учиться и учусь постоянно, занимаясь самообразованием.<br/>Самостоятельно нахожу информацию для решения различных задач, не имею шаблонов, готов рассматривать различные варианты и альтернативы.<br/>Умею быстро анализировать ситуацию, принимать необходимые решения, возлагая за них на себя полную ответственность, все стараюсь выполнять в оговоренные сроки(как правило даже раньше).<br/>Выдерживаю высокие эмоциональные нагрузки, в критических ситуациях всегда сохраняю спокойствие. Быстро нахожу общий язык с людьми для решения необходимых задач, умею слышать и слушать, адаптируюсь в командной работе, в коллективе.<br/>Максимально честен и общителен, презираю лицемерие, соответственно, сам таковым не являюсь.<br/>Не пью, не курю, Я за здравый и трезвый образ жизни и мышления!</p>
 </li>
 <li class=about-me__desc-list__item>Хобби:
 <p>Познание чего-либо нового, спорт(конг-фу, фитнес), музыка(электрогитара), PC гейминг.</p>
@@ -94,7 +95,7 @@
 <section id=portfolio data-target=panel class=portfolio>
 <h1 class=sec-title>Мои работы</h1>
 <div class=container>
-<div class="row no-gutters">
+<div class="row no-gutters portfolio__wrap">
 <div class="col-sm-6 col-xs-6">
 <div class=portfolio-wrapper><a href=https://aditon1800.github.io/Projects/Waxom/dist/index.html class=portfolio__link>
 <div class=portfolio__img-wrapper>
@@ -141,12 +142,33 @@
 </div>
 <div class=portfolio__desc-wrapper><span class=portfolio__desc>Фиксированная вёрстка сайта<br/><span class=desc--over>ДедМороз</span></span></div></a></div>
 </div>
+<div class="col-sm-12">
+  <div class="portfolio-wrapper">
+    <a href="href=https://aditon1800.github.io/Projects/Vrynke/dist/index.html" class="portfolio__link">
+      <div class="portfolio__img-wrapper">
+        <picture>
+          <source srcset=img/case7.webp class="img-responsive portfolio__img"/>
+          <img src=img/case7.jpg class="img-responsive portfolio__img"/>
+        </picture>
+      </div>
+      <div class="portfolio__desc-wrapper">
+        <span class="portfolio__desc"> Верстка сайта
+          <span class="desc--over">ВРЫНКЕ.РФ</span>
+          <br>
+          по заказу 
+          <br>
+          VOIDMEDIA.RU
+        </span>
+      </div>
+    </a>
+  </div>
+</div>
 </div>
 </div>
 </section>
 <footer id=footer data-target=panel class=footer>
 <div class=container>
-<div class=footer-contact><span class=footer-contact__desc>тел: + 7 953 818 41 82</span><span class="footer-contact__desc mail-icon">aditon1800@mail.ru</span><span class="footer-contact__desc skype-icon">aditon1800</span><a href=https://vk.com/id29223424 class="footer-contact__desc vk-icon">https://vk.com/id29223424</a></div>
+<div class=footer-contact><span class=footer-contact__desc>тел: + 7 953 818 41 82</span><a href="mailto:aditon1800@mail.ru" class="footer-contact__desc mail-icon">aditon1800@mail.ru</a><a href="skype:aditon1800?call" class="footer-contact__desc skype-icon">aditon1800</a><a href=https://vk.com/id29223424 class="footer-contact__desc vk-icon">https://vk.com/id29223424</a></div>
 </div>
 </footer>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js></script>

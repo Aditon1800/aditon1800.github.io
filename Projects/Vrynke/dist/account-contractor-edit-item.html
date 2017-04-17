@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/dtp/bootstrap.custom.css"/>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compitable" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <ink rel="icon" href="favicon.ico" type="image/x-icon"></ink>
+    <!-- [if lt IE 9]>
+    <script src="js/sctiptIE.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    -->
+    <!-- [endif]-->
+    <link rel="stylesheet" href="css/dtp/bootstrap-datetimepicker.min.css"/>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="toggle header__toggle js-toggle"><span class="toggle__line"></span><span class="toggle__line"></span><span class="toggle__line"></span></div>
+          <div class="logo header__logo"><a class="header__logo-link"><img src="img/logo.png" alt="врынке.рф" class="logo-img header__logo-img"/></a></div>
+          <div class="header__list js-header__list">
+            <button class="button header__list-button js-list-button"></button>
+            <div class="header__nav-list">
+              <div class="header__nav-item header__nav-item--active"><a href="for-agent.html">Я — агент</a></div>
+              <div class="header__nav-item"><a href="for-contractor.html">Я — поставщик</a></div>
+              <div class="header__nav-item"><a href="catalog.html">Каталог предложений</a></div>
+              <div class="header__nav-item"><a href="regions-list.html">Регионы</a></div>
+            </div>
+            <div class="header__nav-list header__nav-list--mobile">
+              <div class="header__nav-item"><a href="about.html">О платформе</a></div>
+              <div class="header__nav-item"><a href="careers-list.html">Работать у нас</a></div>
+              <div class="header__nav-item"><a href="news-list.html">Новости</a></div>
+              <div class="header__nav-item"><a href="contact-us.html">Связаться с нами</a></div>
+            </div>
+          </div>
+          <div class="header__sign-in"><a href="#~" class="button header__button-account js-button-account"><img src="img/account-icon.png" alt="account-logo"/></a>
+            <div class="header__account-block js-account-block">
+              <ul class="header__account-list">
+                <li class="header__account-item"><a href="account-agent-edit-account.html">Редактировать профиль</a></li>
+                <li class="header__account-item"><a href="account-agent-message.html">Сообщения</a></li>
+                <li class="header__account-item"><a href="login.html">Выйти</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Crumbs-->
+      <div class="crumbs">
+        <div class="container">
+              <div class="crumbs__nav-block crumbs__block--active"><a href="" class="crumbs__nav-link crumbs__nav-link--prof">Профиль</a></div>
+              <div class="crumbs__nav-block"><a href="account-agent-message.html" class="crumbs__nav-link crumbs__nav-link--mes">Сообщения</a><span class="crumbs__nav-counter">25</span></div>
+              <div class="crumbs__nav-block"><a href="account-agent-fi-list.html" class="crumbs__nav-link crumbs__nav-link--fav">Избранное</a></div>
+              <div class="crumbs__nav-block"><a href="training.html" class="crumbs__nav-link crumbs__nav-link--training">Обучение</a></div>
+        </div>
+      </div>
+      <section class="main-content account--edit">
+        <div class="container">
+          <h1 class="main-content__title">Редактировать товар / услугу</h1>
+          <form action="account-contractor-preview-item.html" method="" id="">
+            <!-- Main info-->
+            <div class="account__line-title">1. Основная информация</div>
+            <div class="row account__input-block">
+              <div class="col-lg-6">
+                <div class="account__edit-title">Наименование товара или услуги *</div>
+                <input type="text" name="text" class="input"/>
+              </div>
+              <div class="col-lg-3">
+                <div class="account__edit-title">Срок действия предложения *</div>
+                <input type="text" name="date" id="datetimepicker4" class="input"/>
+              </div>
+              <div class="col-lg-12">
+                <div class="account__edit-title">Регионы распространения *</div>
+                <input type="text" name="region" placeholder="Начните вводить регион" class="input"/>
+              </div>
+              <div class="col-lg-6">
+                <div class="account__edit-title">Краткое описание *</div>
+                <textarea id="editor3" class="textarea"></textarea>
+              </div>
+              <div class="col-lg-6">
+                <div class="account__edit-title">Условия поставки / доставки или предоставления услуги *</div>
+                <textarea class="textarea"></textarea>
+              </div>
+              <div class="col-sm-3"><a class="button button--green--md">Продолжить</a></div>
+            </div>
+            <!--Pricing-->
+            <div class="account__line-title">2. Ценообразование</div>
+            <div class="row account__input-block">
+              <div class="col-lg-3">
+                <div class="account__edit-title">Единица измерения *</div>
+                <select class="input">
+                  <option disable="disable">Выберите</option>
+                  <option>шт</option>
+                  <option>кг</option>
+                  <option>т</option>
+                  <option>п.м</option>
+                  <option>кв.м</option>
+                  <option>куб.м</option>
+                </select>
+              </div>
+              <div class="col-lg-3">
+                <div class="account__edit-title">Минимальный объём *</div>
+                <input type="text" name="minVol" class="input"/>
+              </div>
+              <div class="col-lg-2">
+                <div style="visibility: hidden;" class="account__edit-title">Тип измерения</div>
+                <select class="input">
+                  <option disable="disable">В единицах</option>
+                  <option>В валюте</option>
+                </select>
+              </div>
+              <div class="col-lg-2">
+                <div class="account__edit-title">Валюта *</div>
+                <select class="input">
+                  <option disable="disable">&#8381; (рубль)</option>
+                  <option>&#36; (доллар)</option>
+                  <option> &#8364; (евро)</option>
+                </select>
+              </div>
+              <div class="col-lg-3">
+                <div class="account__edit-title">Стоимость за единицу</div>
+                <div class="question">&#63;<span class="question__tooltip">Без учёта доставки и НДС.</span></div>
+                <input type="text" name="id" class="input"/>
+              </div>
+              <div class="col-lg-2">
+                <div class="account__edit-title">Ставка НДС *</div>
+                <select class="input">
+                  <option disable="disable">Без НДС</option>
+                  <option>10&#37;</option>
+                  <option>18&#37;</option>
+                </select>
+              </div>
+              <div class="col-lg-3">
+                <div class="account__edit-title">Цена</div>
+                <div class="question">&#63;<span class="question__tooltip">Рассчитывается автоматически из стоимости за единицу и ставки НДС. Без учёта доставки.</span></div>
+                <input type="text" name="id" class="input"/>
+              </div>
+            </div>
+            <div class="row account__input-block">
+              <div class="col-sm-3"><a class="button button--green--md">Продолжить</a></div>
+            </div>
+            <!-- Agent info-->
+            <div class="account__line-title">3. Информация для агентов</div>
+            <div class="row account__input-block">
+              <div class="col-sm-3">
+                <div class="account__edit-title">Вознаграждение *</div>
+                <div class="question">&#63;<span class="question__tooltip">Процент от суммы продажи с учётом НДС. Без учёта доставки.</span></div>
+              </div>
+            </div>
+            <div class="account__input-block">
+              <div class="input__procent-block">
+                <input type="text" name="procent" class="input"/><span class="input__span-procent">&#37;</span>
+              </div>
+            </div>
+            <div class="row account__input-block">
+              <div class="col-sm-6">
+                <div class="account__edit-title">Требования к торговому агенту *</div>
+                <textarea id="editor4" class="textarea"></textarea>
+              </div>
+            </div>
+            <div class="row account__input-block">
+              <div class="col-sm-3"><a class="button button--green--md">Продолжить</a></div>
+            </div>
+            <!-- Downloads-->
+            <div class="account__line-title">4. Загрузки</div>
+            <div class="row account__input-block">
+              <div class="col-sm-6">
+                <div class="account__edit-title">Загрузить фото *</div>
+                <div class="input__photo-block">
+                  <div class="input__photo"><img src="img/account/input-photo.png"/></div>
+                  <div class="input__photo"><img src="img/account/input-photo.png"/></div>
+                  <div class="input__photo"><img src="img/account/input-photo.png"/></div>
+                  <div class="input__photo"><img src="img/account/input-photo.png"/></div>
+                </div>
+                <div class="input__important-info">Перетащите фото на значёк камеры или <a>выберите на компьютере.</a><br/>Размер одного файла не должен превышать 2Мб. Разерешённые форматы: JPG, PNG, GIF.</div>
+              </div>
+              <div class="col-sm-6">
+                <div class="account__edit-title">Видеоролик</div>
+                <input type="text" name="getVideo" class="input"/>
+                <div class="input__important-info">Ссылка на видеоролик</div>
+              </div>
+            </div>
+            <div class="row account__input-block">
+              <div class="col-sm-6">
+                <div class="account__edit-title">Форма договора на поставку товара или оказание услуг *</div>
+                <div class="account__dl-block">
+                  <div class="account__dl">Загруежен:</div>
+                </div>
+                <div class="input__fileform">
+                  <div class="input__fileform-button">Обзор</div>
+                  <input type="file" name="contract" class="input"/>
+                </div>
+                <div class="input__important-info">Размер файла не должен превышать 2Мб. Разерешённые форматы: DOC, DOCX, ODT, RTF, PDF</div>
+              </div>
+              <div class="col-sm-6">
+                <div class="account__edit-title">Прайс-лист *</div>
+                <div class="account__dl-block">
+                  <div class="account__dl">Загруежен:</div>
+                </div>
+                <div class="input__fileform">
+                  <div class="input__fileform-button">Обзор</div>
+                  <input type="file" name="priceList" class="input"/>
+                </div>
+                <div class="input__important-info">Размер файла не должен превышать 2Мб. Разерешённые форматы: DOC, DOCX, ODT, RTF, PDF</div>
+              </div>
+            </div>
+            <div class="row account__input-block">
+              <div class="col-sm-6">
+                <div class="account__edit-title">Презентация (PDF)</div>
+                <div class="account__dl-block"></div>
+                <div class="input__fileform">
+                  <div class="input__filefield"></div>
+                  <div class="input__fileform-button">Обзор</div>
+                  <input type="file" name="pdf" class="input"/>
+                </div>
+                <div class="input__important-info"></div>
+              </div>
+              <div class="col-sm-6">
+                <div class="account__edit-title">Другие материалы</div>
+                <div class="account__dl-block">
+                  <div class="account__dl">Загруежено:</div>
+                </div>
+                <div class="input__fileform">
+                  <div class="input__fileform-button">Обзор</div>
+                  <input type="file" name="other" class="input"/>
+                </div>
+              </div>
+              <div class="input__bottom-block">
+                <button class="button button--green">Предпросмотр и публикация</button>
+              </div>
+            </div>
+          </form>
+          <div class="account__important-info"><span>Поля, отмеченные звездочкой (*), обязательны к заполнению.</span></div>
+        </div>
+        <!-- Footer-->
+      </section>
+      <div class="prefooter">
+        <picture>
+          <source srcset="img/footer-img-main-mob.png" media="(max-width: 991px)" class="prefooter__img-block"/><img src="img/footer-img-main.png" alt="footer-img" class="prefooter__img-block"/>
+        </picture>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="footer__content-wrap">
+                <h2 class="footer__title js-footer-title">Информация и поддержка <span class="arrow"></span></h2>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a href="privacy.html" class="footer__list-link">Политика конфиденциальности</a></li>
+                  <li class="footer__list-item"><a href="public-offer.html" class="footer__list-link">Публичная оферта</a></li>
+                  <li class="footer__list-item"><a href="news-list.html" class="footer__list-link">Новости</a></li>
+                  <li class="footer__list-item"><a href="contact-us.html" class="footer__list-link">Связаться с нами</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer__content-wrap">
+                <h2 class="footer__title js-footer-title">Врынке <span class="arrow"></span></h2>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a href="about.html" class="footer__list-link">О платформе</a></li>
+                  <li class="footer__list-item"><a href="careers-list.html" class="footer__list-link">Работать у нас</a></li>
+                  <li class="footer__list-item"><a href="partnership.html" class="footer__list-link">Сотрудничать с нами</a></li>
+                  <li class="footer__list-item"><a href="legal-info.html" class="footer__list-link">Юридическая информация</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer__content-wrap">
+                <div class="logo footer__logo"><a href="index.html"><img src="img/footer-logo.png" alt="врынке.рф"/></a></div>
+                <p class="footer__copy">&copy; Врынке, 2017. Все права защищены.</p>
+                <div class="footer__social"><a href="#~" class="footer__social-icon footer__social-vk"></a><a href="#~" class="footer__social-icon footer__social-inst"></a><a href="#~" class="footer__social-icon footer__social-facebook"></a></div>
+                <div class="footer__author-info">Проект создан - <a href="http://voidmedia.ru/" target="_blank" class="footer__author-link">Void media</a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Overlay-->
+      <div class="overlay"></div>
+      <!-- Scripts-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="js/project/script.js"></script>
+      <script src="js/project/nav-toggle.js"></script>
+      <script src="js/project/block-toggle.js"></script>
+      <script src="js/project/account-block.js"></script>
+      <script src="js/dtp/moment-with-locales.min.js"></script>
+      <script src="js/dtp/bootstrap.min.js"></script>
+      <script src="js/dtp/bootstrap-datetimepicker.min.js"></script>
+      <script src="js/ckeditor/ckeditor.js"></script>
+      <script>
+        $(function () {
+            $('#datetimepicker4').datetimepicker();
+        });
+      </script>
+      <script>
+        CKEDITOR.replace( 'editor3' );
+        CKEDITOR.replace( 'editor4' );
+      </script>
+    </div>
+  </body>
+</html>
