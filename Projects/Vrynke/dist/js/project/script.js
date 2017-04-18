@@ -1,7 +1,6 @@
 (function(){
     var itemMain = document.querySelector('.item__main-prew__img-block'),
           itemPrewMini = document.getElementsByClassName('item__prew-mini__block');
-    var test = itemMain.innerHTML;
     for (var i =  0; i < itemPrewMini.length; i++) {
         itemPrewMini[i].onclick = function() {
            itemMain.innerHTML = this.innerHTML;
