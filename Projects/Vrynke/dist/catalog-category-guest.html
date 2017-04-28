@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compitable" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <ink rel="icon" href="favicon.ico" type="image/x-icon"></ink>
+    <!-- [if lt IE 9]>
+    <script src="js/sctiptIE.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    -->
+    <!-- [endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="toggle header__toggle js-toggle"><span class="toggle__line"></span><span class="toggle__line"></span><span class="toggle__line"></span></div>
+          <div class="logo header__logo"><a href="index.html" class="header__logo-link"><img src="img/logo.png" alt="врынке.рф" class="logo-img header__logo-img"/></a></div>
+          <div class="header__list js-header__list">
+            <button class="button header__list-button js-list-button"></button>
+            <div class="header__nav-list">
+              <div class="header__nav-item"><a href="for-agent.html">Я — агент</a></div>
+              <div class="header__nav-item"><a href="for-contractor.html">Я — поставщик</a></div>
+              <div class="header__nav-item"><a href="catalog.html">Каталог предложений</a></div>
+              <div class="header__nav-item"><a href="regions-list.html">Регионы</a></div>
+            </div>
+            <div class="header__nav-list header__nav-list--mobile">
+              <div class="header__nav-item"><a href="about.html">О платформе</a></div>
+              <div class="header__nav-item"><a href="careers-list.html">Работать у нас</a></div>
+              <div class="header__nav-item"><a href="news.html">Новости</a></div>
+              <div class="header__nav-item"><a href="contact-us.html">Связаться с нами</a></div><a href="registration.html" class="button header__button-reg header__mob-reg">Регистрация</a>
+            </div>
+          </div>
+          <div class="header__sign-in"><a href="login.html" class="button header__button-in">Вход</a><a href="registration.html" class="button header__button-reg header__desc-reg">Регистрация</a></div>
+        </nav>
+      </div>
+      <!-- Crumbs-->
+      <div class="crumbs">
+        <div class="container">
+              <div class="crumbs__block"><a href="index.html" class="crumbs__link">Главная</a><span class="crumbs__link-slash"> /</span></div>
+              <div class="crumbs__block"><a href="regions-list.html" class="crumbs__link">Поставщик по регионам</a><span class="crumbs__link-slash"> /</span></div>
+              <div class="crumbs__block"><a href="" class="crumbs__link">Категория товаров/услуг</a><span class="crumbs__link-slash"></span></div>
+        </div>
+      </div>
+      <div class="order order--item-list gray-bg">
+        <section class="main-content">
+          <div class="container">
+            <h1 class="main-content__title">Категория товаров / услуг *</h1>
+            <div class="search-block--mob"><span>Сортировка:</span>
+              <select class="input">
+                <option disable="disable">Наименование</option>
+                <option>Вознаграждение</option>
+                <option>Цена</option>
+              </select>
+            </div>
+            <div class="subcat"><span class="subcat__name">Подкатегории:</span>
+              <div class="dropdown-block"><span class="dropdown-value">Подкатегории:</span></div>
+              <div class="subcat__list-block">
+                <ul class="subcat__list">
+                  <li class="subcat__list-item"><a href="catalog-category-sub.html">Строительные материалы</a></li>
+                  <li class="subcat__list-item"><a href="catalog-category-sub.html">Отделочные материалы</a></li>
+                  <li class="subcat__list-item"><a href="catalog-category-sub.html">Строительные техгника и оборудование</a></li>
+                  <li class="subcat__list-item"><a href="catalog-category-sub.html">Вентиляционные системы</a></li>
+                  <li class="subcat__list-item"><a href="catalog-category-sub.html">Ландшафтные строения</a></li>
+                  <li class="subcat__list-item"><a href="catalog-category-sub.html">Строительный инструмент</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="orable">
+              <div class="table">
+                <div class="tr title-tr">
+                  <div class="order__table-title order__table-title--number--mob">Наименование / цена</div>
+                  <div class="th order__table-title">
+                    <div class="order__table-title--img">Изображение</div>
+                  </div>
+                  <div class="th order__table-title order__table-title--number"><span class="sorter"></span> Наименование</div>
+                  <div class="th order__table-title order__table-title--name"> Регионы поставки</div>
+                  <div class="th order__table-title">
+                    <div class="order__table-title--list-reward order__table-title--reward"><span class="sorter"></span> Вознаграждение **</div>
+                  </div>
+                  <div class="th order__table-title order__table-title--cost"><span class="sorter"></span> Цена</div>
+                  <div class="th order__table-title order__table-title--volume">Мин. объём</div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon1.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Композитный состав CERAMET ANTICOR</a></div>
+                  <div class="td order__status">Москва, Нижний Новгород, Екатеринбург</div>
+                  <div class="td order__reward order__list-reward">15%</div>
+                  <div class="td order__volume">600 &#8381;/кг</div>
+                  <div class="td order__cost">5 000 кг</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag button--flag--active"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon2.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Опора деревянная пропитанная для ЛЭП</a></div>
+                  <div class="td order__status">Москва</div>
+                  <div class="td order__reward order__list-reward">11%</div>
+                  <div class="td order__volume">1000 &#8381;/кг</div>
+                  <div class="td order__cost">20 шт</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon3.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Носилки строительные</a></div>
+                  <div class="td order__status">Нижний Новгород</div>
+                  <div class="td order__reward order__list-reward">3%</div>
+                  <div class="td order__volume">300 &#8381;/кг</div>
+                  <div class="td order__cost">11 000 кг</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag button--flag--active"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon4.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Компенсатор усадки М30х300-100х100</a></div>
+                  <div class="td order__status">Москва</div>
+                  <div class="td order__reward order__list-reward">15%</div>
+                  <div class="td order__volume">150 &#8381;/кг</div>
+                  <div class="td order__cost">8 000 кг</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon5.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Встроенный сифон для сброса дренажа от кондиционеров HL 138</a></div>
+                  <div class="td order__status">Москва, Нижний Новгород, Екатеринбург</div>
+                  <div class="td order__reward order__list-reward">15%</div>
+                  <div class="td order__volume">600 &#8381;/кг</div>
+                  <div class="td order__cost">5 000 кг</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag button--flag--active"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon6.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Ведро строительное пластиковое с ручкой</a></div>
+                  <div class="td order__status">Москва</div>
+                  <div class="td order__reward order__list-reward">11%</div>
+                  <div class="td order__volume">1 000 &#8381;/кг</div>
+                  <div class="td order__cost">20 кг</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag button--flag--active"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon7.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Электроды ЛЭЗ, МР-3, Ф4</a></div>
+                  <div class="td order__status">Нижний Новгород</div>
+                  <div class="td order__reward order__list-reward">3%</div>
+                  <div class="td order__volume">300 &#8381;/кг</div>
+                  <div class="td order__cost">11 000 кг</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag button--flag--active"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon8.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Угловая насадка (сопло) Полинор</a></div>
+                  <div class="td order__status">Москва</div>
+                  <div class="td order__reward order__list-reward">15%</div>
+                  <div class="td order__volume">150 &#8381;/кг</div>
+                  <div class="td order__cost">8 000 кг</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon1.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Плиты Quick Deck (Квик Дек) 16х2440х600</a></div>
+                  <div class="td order__status">Москва, Нижний Новгород, Екатеринбург</div>
+                  <div class="td order__reward order__list-reward">15%</div>
+                  <div class="td order__volume">600 &#8381;/кг</div>
+                  <div class="td order__cost">5 000 кг</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag button--flag--active"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon9.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Композитный состав CERAMET ANTICOR</a></div>
+                  <div class="td order__status">Москва, Нижний Новгород, Екатеринбург</div>
+                  <div class="td order__reward order__list-reward">11%</div>
+                  <div class="td order__volume">1 000 &#8381;/кг</div>
+                  <div class="td order__cost">20 шт</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag button--flag--active"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon1.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Композитный состав CERAMET ANTICOR</a></div>
+                  <div class="td order__status">Москва, Нижний Новгород, Екатеринбург</div>
+                  <div class="td order__reward order__list-reward">15%</div>
+                  <div class="td order__volume">600 &#8381;/кг</div>
+                  <div class="td order__cost">5 000 кг</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag button--flag--active"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon2.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Опора деревянная пропитанная для ЛЭП</a></div>
+                  <div class="td order__status">Москва</div>
+                  <div class="td order__reward order__list-reward">11%</div>
+                  <div class="td order__volume">1000 &#8381;/кг</div>
+                  <div class="td order__cost">20 шт</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag button--flag--active"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon3.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Носилки строительные</a></div>
+                  <div class="td order__status">Нижний Новгород</div>
+                  <div class="td order__reward order__list-reward">3%</div>
+                  <div class="td order__volume">300 &#8381;/кг</div>
+                  <div class="td order__cost">11 000 кг</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag button--flag--active"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon4.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Компенсатор усадки М30х300-100х100</a></div>
+                  <div class="td order__status">Москва</div>
+                  <div class="td order__reward order__list-reward">15%</div>
+                  <div class="td order__volume">150 &#8381;/кг</div>
+                  <div class="td order__cost">8 000 кг</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag button--flag--active"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon5.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Встроенный сифон для сброса дренажа от кондиционеров HL 138</a></div>
+                  <div class="td order__status">Москва, Нижний Новгород, Екатеринбург</div>
+                  <div class="td order__reward order__list-reward">15%</div>
+                  <div class="td order__volume">600 &#8381;/кг</div>
+                  <div class="td order__cost">5 000 кг</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon6.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Ведро строительное пластиковое с ручкой</a></div>
+                  <div class="td order__status">Москва</div>
+                  <div class="td order__reward order__list-reward">11%</div>
+                  <div class="td order__volume">1 000 &#8381;/кг</div>
+                  <div class="td order__cost">20 кг</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag button--flag--active"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon7.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Электроды ЛЭЗ, МР-3, Ф4</a></div>
+                  <div class="td order__status">Нижний Новгород</div>
+                  <div class="td order__reward order__list-reward">3%</div>
+                  <div class="td order__volume">300 &#8381;/кг</div>
+                  <div class="td order__cost">11 000 кг</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag button--flag--active"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon8.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Угловая насадка (сопло) Полинор</a></div>
+                  <div class="td order__status">Москва</div>
+                  <div class="td order__reward order__list-reward">15%</div>
+                  <div class="td order__volume">150 &#8381;/кг</div>
+                  <div class="td order__cost">8 000 кг</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag button--flag--active"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon1.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Плиты Quick Deck (Квик Дек) 16х2440х600</a></div>
+                  <div class="td order__status">Москва, Нижний Новгород, Екатеринбург</div>
+                  <div class="td order__reward order__list-reward">15%</div>
+                  <div class="td order__volume">600 &#8381;/кг</div>
+                  <div class="td order__cost">5 000 кг</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag"></button>
+                  </div>
+                </div>
+                <!-- Product line-->
+                <div class="tr">
+                  <div class="td order__img"><img src="img/account/list/list-group-icon9.png" alt=" product's img"/></div>
+                  <div class="td order__name"><a href="account-agent-item-page.html">Композитный состав CERAMET ANTICOR</a></div>
+                  <div class="td order__status">Москва, Нижний Новгород, Екатеринбург</div>
+                  <div class="td order__reward order__list-reward">11%</div>
+                  <div class="td order__volume">1 000 &#8381;/кг</div>
+                  <div class="td order__cost">20 шт</div>
+                  <div class="td order__edit">
+                    <button class="button button--flag"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="paginator">
+              <ul class="paginator__list">
+                <li class="paginator__list-item paginator__list-item--active"><a href="#~">1</a></li>
+                <li class="paginator__list-item"><a href="#~">2</a></li>
+                <li class="paginator__list-item"><a href="#~">3</a></li>
+                <li class="paginator__list-item"><a href="#~">4</a></li>
+              </ul>
+            </div><span class="order__bottom-info">* - В данном разделе указана только часть предложений. Более подробную информацию о товарах или услугах можно получить после регистрации в качестве торгового агента.</span><span class="order__bottom-info">** - Процент вознаграждения за содействие в заключении договора с учетом налога на доходы физических лиц (13&#37; для резидентов РФ) или налога на доходы для ИП и юридических лиц.</span>
+          </div>
+          <!-- Footer-->
+        </section>
+        <div class="prefooter">
+          <picture>
+            <source srcset="img/footer-img-main-mob.png" media="(max-width: 991px)" class="prefooter__img-block"/><img src="img/footer-img-main.png" alt="footer-img" class="prefooter__img-block"/>
+          </picture>
+        </div>
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="footer__content-wrap">
+                  <h2 class="footer__title js-footer-title">Информация и поддержка <span class="arrow"></span></h2>
+                  <ul class="footer__list">
+                    <li class="footer__list-item"><a href="privacy.html" class="footer__list-link">Политика конфиденциальности</a></li>
+                    <li class="footer__list-item"><a href="public-offer.html" class="footer__list-link">Публичная оферта</a></li>
+                    <li class="footer__list-item"><a href="news-list.html" class="footer__list-link">Новости</a></li>
+                    <li class="footer__list-item"><a href="contact-us.html" class="footer__list-link">Связаться с нами</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col">
+                <div class="footer__content-wrap">
+                  <h2 class="footer__title js-footer-title">Врынке <span class="arrow"></span></h2>
+                  <ul class="footer__list">
+                    <li class="footer__list-item"><a href="about.html" class="footer__list-link">О платформе</a></li>
+                    <li class="footer__list-item"><a href="careers-list.html" class="footer__list-link">Работать у нас</a></li>
+                    <li class="footer__list-item"><a href="partnership.html" class="footer__list-link">Сотрудничать с нами</a></li>
+                    <li class="footer__list-item"><a href="legal-info.html" class="footer__list-link">Юридическая информация</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col">
+                <div class="footer__content-wrap">
+                  <div class="logo footer__logo"><a href="index.html"><img src="img/footer-logo.png" alt="врынке.рф"/></a></div>
+                  <p class="footer__copy">&copy; Врынке, 2017. Все права защищены.</p>
+                  <div class="footer__social"><a href="#~" class="footer__social-icon footer__social-vk"></a><a href="#~" class="footer__social-icon footer__social-inst"></a><a href="#~" class="footer__social-icon footer__social-facebook"></a></div>
+                  <div class="footer__author-info">Проект создан - <a href="http://voidmedia.ru/" target="_blank" class="footer__author-link">Void media</a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Overlay-->
+        <div class="overlay"></div>
+        <!-- Scripts-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/project/script.js"></script>
+        <script src="js/project/nav-toggle.js"></script>
+        <script src="js/project/block-toggle.js"></script>
+        <script src="js/project/account-block.js"></script>
+        <script src="js/project/button-flag.js"></script>
+        <script src="js/project/dropdown.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

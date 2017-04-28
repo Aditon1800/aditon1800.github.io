@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compitable" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <ink rel="icon" href="favicon.ico" type="image/x-icon"></ink>
+    <!-- [if lt IE 9]>
+    <script src="js/sctiptIE.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    -->
+    <!-- [endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="toggle header__toggle js-toggle"><span class="toggle__line"></span><span class="toggle__line"></span><span class="toggle__line"></span></div>
+          <div class="logo header__logo"><a href="index.html" class="header__logo-link"><img src="img/logo.png" alt="врынке.рф" class="logo-img header__logo-img"/></a></div>
+          <div class="header__list js-header__list">
+            <button class="button header__list-button js-list-button"></button>
+            <div class="header__nav-list">
+              <div class="header__nav-item"><a href="for-agent.html">Я — агент</a></div>
+              <div class="header__nav-item"><a href="for-contractor.html">Я — поставщик</a></div>
+              <div class="header__nav-item"><a href="catalog.html">Каталог предложений</a></div>
+              <div class="header__nav-item"><a href="regions-list.html">Регионы</a></div>
+            </div>
+            <div class="header__nav-list header__nav-list--mobile">
+              <div class="header__nav-item"><a href="about.html">О платформе</a></div>
+              <div class="header__nav-item"><a href="careers-list.html">Работать у нас</a></div>
+              <div class="header__nav-item"><a href="news.html">Новости</a></div>
+              <div class="header__nav-item"><a href="contact-us.html">Связаться с нами</a></div><a href="registration.html" class="button header__button-reg header__mob-reg">Регистрация</a>
+            </div>
+          </div>
+          <div class="header__sign-in"><a href="login.html" class="button header__button-in">Вход</a><a href="registration.html" class="button header__button-reg header__desc-reg">Регистрация</a></div>
+        </nav>
+      </div>
+      <!-- Crumbs-->
+      <div class="crumbs"></div>
+      <!-- Account edit-->
+      <section class="main-content account account__edit">
+        <div class="container">
+          <h1 class="main-content__title">Регистрация</h1>
+          <div class="accountn__edit-block">
+            <form action="success.html" method="" id="">
+              <!-- Personal info-->
+              <h2 class="account__edit-name">Персональная информация</h2>
+              <div class="row account__input-block">
+                <div class="col-md-8 col-sm-12">
+                      <input type="text" name="name" placeholder="ФИО *" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                      <input type="text" name="id" placeholder="ИНН *" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <select class="input">
+                    <option disable="disable">Образование *</option>
+                    <option>Высшее</option>
+                    <option>Среднее</option>
+                    <option>Среднее-специальное</option>
+                    <option>Низшее</option>
+                    <option>Никакое</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Registered address-->
+              <h3 class="account__edit-name account__edit-name--md">Адрес регистрации</h3>
+              <div class="row account__input-block">
+                <div class="col-md-4 col-sm-6">
+                      <input type="text" name="index" placeholder="Индекс *" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input js-let-check"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                      <input type="text" name="region" placeholder="Субъект РФ *" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input js-let-check"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                      <input type="text" name="city" placeholder="Город *" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input js-let-check"/>
+                </div>
+                <div class="col-xs-12">
+                      <input type="text" name="address" placeholder="Улица, номер дома, номер офиса *" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input js-let-check"/>
+                </div>
+              </div>
+              <!-- The actual address-->
+              <div class="account__check-title">
+                <h3 class="account__edit-name account__edit-name--md">Фактический адрес (для направления корреспонденции)</h3>
+                    <div class="checkbox">
+                      <input type="checkbox" id="address" class="checkbox__input"/>
+                      <label for="address" class="checkbox__label">Соответствует адресу регистрации</label>
+                    </div>
+              </div>
+              <div class="row account__input-block">
+                <div class="col-md-4 col-sm-6">
+                      <input type="text" name="index" placeholder="Нндекс *" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input js-get-check"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                      <input type="text" name="region" placeholder="Субъект РФ *" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input js-get-check"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                      <input type="text" name="city" placeholder="Город *" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input js-get-check"/>
+                </div>
+                <div class="col-xs-12">
+                      <input type="text" name="address" placeholder="Улица, номер дома, номер офиса *" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input js-get-check"/>
+                </div>
+              </div>
+              <!-- Contact info-->
+              <h2 class="account__edit-name">Контактная информация</h2>
+              <div class="row account__input-block">
+                <div class="col-md-4 col-sm-6">
+                      <input type="tel" name="phone" placeholder="Телефон *" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                      <input type="phone" name="mail" placeholder="Электронная почта *" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input"/>
+                </div>
+              </div>
+              <!-- Password-->
+              <h2 class="account__edit-name">Пароль для входа в систему</h2>
+              <div class="row account__input-block">
+                <div class="col-md-4 col-sm-6">
+                  <div class="input-check">
+                        <input type="password" name="newPassword" placeholder="Придумайте пароль" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input newPassword"/>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="input-check">
+                        <input type="password" name="newPasswordCopy" placeholder="Повторите новый пароль" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input newPasswordCopy"/>
+                  </div>
+                </div>
+              </div>
+              <div class="account__check-wrap">
+                <div class="account__input-block account__input-block--mb">
+                      <div class="checkbox">
+                        <input type="checkbox" id="js-check-status" class="checkbox__input"/>
+                        <label for="js-check-status" class="checkbox__label">Получить статус подтверждённого агента</label>
+                      </div>
+                  <div class="question js-question">&#63;</div>
+                  <div class="account__input-block__info">Стоимость услуги – <span class="account__check-get">0</span> рублей</div>
+                </div>
+              </div>
+              <div class="row account__input-block js-let-status">
+                <div class="col-md-4 col-sm-6">
+                  <input type="text" name="inn" placeholder="Расчетный счет *" disabled="disabled" class="input"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <input type="text" name="bank" placeholder="Наименвание банка *" disabled="disabled" class="input"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <input type="text" name="bankCity" placeholder="Город банка *" disabled="disabled" class="input"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <input type="text" name="id" placeholder="Корреспондентский счет *" disabled="disabled" class="input"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <input type="text" name="bik" placeholder="БИК *" disabled="disabled" class="input"/>
+                </div>
+              </div>
+              <div class="account__check-wrap">
+                <div class="account__input-block account__input-block--mb">
+                      <div class="checkbox">
+                        <input type="checkbox" id="thirdCheckbox" class="checkbox__input"/>
+                        <label for="thirdCheckbox" class="checkbox__label">С условиями предоставления услуги согласен</label>
+                      </div>
+                  <div class="question js-modal-agr">&#63;</div>
+                </div>
+              </div>
+              <div class="account__check-wrap">
+                <div class="account__input-block account__input-block--mb">
+                      <div class="checkbox">
+                        <input type="checkbox" id="fourthCheckbox" class="checkbox__input"/>
+                        <label for="fourthCheckbox" class="checkbox__label">Даю согласие на обработку персональных данных</label>
+                      </div>
+                  <div class="question js-modal-pers">&#63;</div>
+                </div>
+              </div>
+              <div class="row account__input-block">
+                <div class="col-sm-6 col-md-5 col-lg-4">
+                  <button class="button button--confirm-reg">Подтвердить регистрацию</button>
+                </div>
+              </div>
+              <div class="account__important-info"><span>Поля, отмеченные звездочкой (*), обязательны к заполнению.</span></div>
+            </form>
+          </div>
+          <!-- Footer-->
+        </div>
+        <div class="prefooter">
+          <picture>
+            <source srcset="img/footer-img-main-mob.png" media="(max-width: 991px)" class="prefooter__img-block"/><img src="img/footer-img-main.png" alt="footer-img" class="prefooter__img-block"/>
+          </picture>
+        </div>
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="footer__content-wrap">
+                  <h2 class="footer__title js-footer-title">Информация и поддержка <span class="arrow"></span></h2>
+                  <ul class="footer__list">
+                    <li class="footer__list-item"><a href="privacy.html" class="footer__list-link">Политика конфиденциальности</a></li>
+                    <li class="footer__list-item"><a href="public-offer.html" class="footer__list-link">Публичная оферта</a></li>
+                    <li class="footer__list-item"><a href="news-list.html" class="footer__list-link">Новости</a></li>
+                    <li class="footer__list-item"><a href="contact-us.html" class="footer__list-link">Связаться с нами</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col">
+                <div class="footer__content-wrap">
+                  <h2 class="footer__title js-footer-title">Врынке <span class="arrow"></span></h2>
+                  <ul class="footer__list">
+                    <li class="footer__list-item"><a href="about.html" class="footer__list-link">О платформе</a></li>
+                    <li class="footer__list-item"><a href="careers-list.html" class="footer__list-link">Работать у нас</a></li>
+                    <li class="footer__list-item"><a href="partnership.html" class="footer__list-link">Сотрудничать с нами</a></li>
+                    <li class="footer__list-item"><a href="legal-info.html" class="footer__list-link">Юридическая информация</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col">
+                <div class="footer__content-wrap">
+                  <div class="logo footer__logo"><a href="index.html"><img src="img/footer-logo.png" alt="врынке.рф"/></a></div>
+                  <p class="footer__copy">&copy; Врынке, 2017. Все права защищены.</p>
+                  <div class="footer__social"><a href="#~" class="footer__social-icon footer__social-vk"></a><a href="#~" class="footer__social-icon footer__social-inst"></a><a href="#~" class="footer__social-icon footer__social-facebook"></a></div>
+                  <div class="footer__author-info">Проект создан - <a href="http://voidmedia.ru/" target="_blank" class="footer__author-link">Void media</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Question modal-->
+        <div class="modal modal--question">
+          <div class="modal__close modal__close--mes"></div>
+          <div class="modal__inner">
+            <p>После проверки данных специалистами врынке возле наименования вашей компании появится значок “подтверждено”. для получения статуса подтвержденного агента необходимо предоставить всю информацию и оплатить счет.</p>
+          </div>
+        </div>
+        <!-- modal-->
+        <div class="modal modal--agr">
+          <div class="modal__close"></div>
+          <div class="modal__inner-wrap">
+            <div class="modal__inner">
+              <h2>Условия и соглашения</h2>
+              <p>г. Город                          «день» месяц годг.</p>
+              <p>1. ОБЩИЕ ПОЛОЖЕНИЯ</p>
+              <p>1.1. Настоящее Пользовательское соглашение (далее – Соглашение) относится к сайту Интернет-магазина «название интернет-магазина», расположенному по адресу www.адрес интернет-магазина, и ко всем соответствующим сайтам, связанным с сайтом адрес интернет-магазина.</p>
+              <p>1.2. Сайт Интернет-магазина «название интернет-магазина» (далее – Сайт) является собственностью название организации, предприятия</p>
+              <p>1.3. Настоящее Соглашение регулирует отношения между Администрацией сайта Интернет-магазина « название интернет-магазина»(далее – Администрация сайта) и Пользователем данного Сайта.</p>
+              <p>1.4. Администрация сайта оставляет за собой право в любое время изменять, добавлять или удалять пункты настоящего Соглашения без уведомления Пользователя.</p>
+              <p>1.5. Продолжение использования Сайта Пользователем означает принятие Соглашения и изменений, внесенных в настоящее Соглашение.</p>
+              <p>1.6. Пользователь несет персональную ответственность за проверку настоящего Соглашения на наличие изменений в нем.</p>
+              <p>2. ОПРЕДЕЛЕНИЯ ТЕРМИНОВ</p>
+              <p>2.1. Перечисленные ниже термины имеют для целей настоящего Соглашения следующее значение:</p>
+              <p>2.1.1 «название интернет-магазина» – Интернет-магазин, расположенный на доменном имени www.адрес интернет-магазина, осуществляющий свою деятельность посредством Интернет-ресурса и сопутствующих ему сервисов.</p>
+              <p>2.1.2. Интернет-магазин – сайт, содержащий информацию о Товарах, Продавце, позволяющий осуществить выбор, заказ и (или) приобретение Товара.</p>
+              <p>2.1.3. Администрация сайта Интернет-магазина – уполномоченные сотрудники на управления Сайтом, действующие от имени название организации.</p>
+              <p>2.1.4. Пользователь сайта Интернет-магазина (далее ? Пользователь) – лицо, имеющее доступ к Сайту, посредством сети Интернет и использующее Сайт.</p>
+              <p>2.1.5. Содержание сайта Интернет-магазина (далее – Содержание) - охраняемые результаты интеллектуальной деятельности, включая тексты литературных произведений, их названия, предисловия, аннотации, статьи, иллюстрации, обложки, музыкальные произведения с текстом или без текста, графические, текстовые, фотографические, производные, составные и иные произведения, пользовательские интерфейсы, визуальные интерфейсы, названия товарных знаков, логотипы, программы для ЭВМ, базы данных, а также дизайн, структура, выбор, координация, внешний вид, общий стиль и расположение данного Содержания, входящего в состав Сайта и другие объекты интеллектуальной собственности все вместе и/или по отдельности, содержащиеся на сайте Интернет-магазина.</p>
+              <p>3. ПРЕДМЕТ СОГЛАШЕНИЯ</p>
+              <p>3.1. Предметом настоящего Соглашения является предоставление Пользователю Интернет-магазина доступа к содержащимся на Сайте Товарам и оказываемым услугам.</p>
+              <p>3.1.1. Интернет-магазин предоставляет Пользователю следующие виды услуг (сервисов):<br/><br/>доступ к электронному контенту на платной основе, с правом приобретения (скачивания), просмотра контента;<br/>доступ к средствам поиска и навигации Интернет-магазина;<br/>предоставление Пользователю возможности размещения сообщений, комментариев, рецензий Пользователей, выставления оценок контенту Интернет-магазина;<br/>доступ к информации о Товаре и к информации о приобретении Товара на платной основе; иные виды услуг (сервисов), реализуемые на страницах Интернет-магазина.</p>
+              <p>3.1.2. Под действие настоящего Соглашения подпадают все существующие (реально функционирующие) на данный момент услуги (сервисы) Интернет-магазина, а также любые их последующие модификации и появляющиеся в дальнейшем дополнительные услуги (сервисы) Интернет-магазина.</p>
+              <p>3.2. Доступ к Интернет-магазину предоставляется на _________ основе.</p>
+              <p>3.3. Настоящее Соглашение является публичной офертой. Получая доступ к Сайту Пользователь считается присоединившимся к настоящему Соглашению.</p>
+              <p>3.4. Использование материалов и сервисов Сайта регулируется нормами действующего законодательства Российской Федерации</p>
+              <p>9. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ</p>
+              <p>9.1. Администрация сайта не принимает встречные предложения от Пользователя относительно изменений настоящего Пользовательского соглашения.</p>
+              <p>9.2. Отзывы Пользователя, размещенные на Сайте, не являются конфиденциальной информацией и могут быть использованы Администрацией сайта без ограничений.</p>
+              <p>Обновлено «день» месяц год г.</p>
+            </div>
+          </div>
+        </div>
+        <!-- modal-->
+        <div class="modal modal--pers">
+          <div class="modal__close"></div>
+          <div class="modal__inner-wrap">
+            <div class="modal__inner">
+              <h2>СОГЛАСИЕ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ</h2>
+              <p>г. Город                          «день» месяц годг.</p>
+              <p>1. ОБЩИЕ ПОЛОЖЕНИЯ</p>
+              <p>1.1. Настоящее Пользовательское соглашение (далее – Соглашение) относится к сайту Интернет-магазина «название интернет-магазина», расположенному по адресу www.адрес интернет-магазина, и ко всем соответствующим сайтам, связанным с сайтом адрес интернет-магазина.</p>
+              <p>1.2. Сайт Интернет-магазина «название интернет-магазина» (далее – Сайт) является собственностью название организации, предприятия</p>
+              <p>1.3. Настоящее Соглашение регулирует отношения между Администрацией сайта Интернет-магазина « название интернет-магазина»(далее – Администрация сайта) и Пользователем данного Сайта.</p>
+              <p>1.4. Администрация сайта оставляет за собой право в любое время изменять, добавлять или удалять пункты настоящего Соглашения без уведомления Пользователя.</p>
+              <p>1.5. Продолжение использования Сайта Пользователем означает принятие Соглашения и изменений, внесенных в настоящее Соглашение.</p>
+              <p>1.6. Пользователь несет персональную ответственность за проверку настоящего Соглашения на наличие изменений в нем.</p><br/>
+              <p>2. ОПРЕДЕЛЕНИЯ ТЕРМИНОВ</p>
+              <p>2.1. Перечисленные ниже термины имеют для целей настоящего Соглашения следующее значение:</p>
+              <p>2.1.1 «название интернет-магазина» – Интернет-магазин, расположенный на доменном имени www.адрес интернет-магазина, осуществляющий свою деятельность посредством Интернет-ресурса и сопутствующих ему сервисов.</p>
+              <p>2.1.2. Интернет-магазин – сайт, содержащий информацию о Товарах, Продавце, позволяющий осуществить выбор, заказ и (или) приобретение Товара.</p>
+              <p>2.1.3. Администрация сайта Интернет-магазина – уполномоченные сотрудники на управления Сайтом, действующие от имени название организации.</p>
+              <p>2.1.4. Пользователь сайта Интернет-магазина (далее ? Пользователь) – лицо, имеющее доступ к Сайту, посредством сети Интернет и использующее Сайт.</p>
+              <p>2.1.5. Содержание сайта Интернет-магазина (далее – Содержание) - охраняемые результаты интеллектуальной деятельности, включая тексты литературных произведений, их названия, предисловия, аннотации, статьи, иллюстрации, обложки, музыкальные произведения с текстом или без текста, графические, текстовые, фотографические, производные, составные и иные произведения, пользовательские интерфейсы, визуальные интерфейсы, названия товарных знаков, логотипы, программы для ЭВМ, базы данных, а также дизайн, структура, выбор, координация, внешний вид, общий стиль и расположение данного Содержания, входящего в состав Сайта и другие объекты интеллектуальной собственности все вместе и/или по отдельности, содержащиеся на сайте Интернет-магазина.</p><br/>
+              <p>3. ПРЕДМЕТ СОГЛАШЕНИЯ</p>
+              <p>3.1. Предметом настоящего Соглашения является предоставление Пользователю Интернет-магазина доступа к содержащимся на Сайте Товарам и оказываемым услугам.</p>
+              <p>3.1.1. Интернет-магазин предоставляет Пользователю следующие виды услуг (сервисов):<br/><br/>доступ к электронному контенту на платной основе, с правом приобретения (скачивания), просмотра контента;<br/>доступ к средствам поиска и навигации Интернет-магазина;<br/>предоставление Пользователю возможности размещения сообщений, комментариев, рецензий Пользователей, выставления оценок контенту Интернет-магазина;<br/>доступ к информации о Товаре и к информации о приобретении Товара на платной основе; иные виды услуг (сервисов), реализуемые на страницах Интернет-магазина.</p>
+              <p>3.1.2. Под действие настоящего Соглашения подпадают все существующие (реально функционирующие) на данный момент услуги (сервисы) Интернет-магазина, а также любые их последующие модификации и появляющиеся в дальнейшем дополнительные услуги (сервисы) Интернет-магазина.</p>
+              <p>3.2. Доступ к Интернет-магазину предоставляется на _________ основе.</p>
+              <p>3.3. Настоящее Соглашение является публичной офертой. Получая доступ к Сайту Пользователь считается присоединившимся к настоящему Соглашению.</p>
+              <p>3.4. Использование материалов и сервисов Сайта регулируется нормами действующего законодательства Российской Федерации</p>
+              <p>9. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ</p>
+              <p>9.1. Администрация сайта не принимает встречные предложения от Пользователя относительно изменений настоящего Пользовательского соглашения.</p>
+              <p>9.2. Отзывы Пользователя, размещенные на Сайте, не являются конфиденциальной информацией и могут быть использованы Администрацией сайта без ограничений.</p>
+              <p>Обновлено «день» месяц год г.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Overlay-->
+        <div class="overlay"></div>
+        <!-- Scripts-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/project/script.js"></script>
+        <script src="js/project/nav-toggle.js"></script>
+        <script src="js/project/block-toggle.js"></script>
+        <script src="js/project/account-block.js"></script>
+        <script src="js/project/modal.js"></script>
+        <script src="js/project/password.js"></script>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compitable" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <ink rel="icon" href="favicon.ico" type="image/x-icon"></ink>
+    <!-- [if lt IE 9]>
+    <script src="js/sctiptIE.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    -->
+    <!-- [endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="toggle header__toggle js-toggle"><span class="toggle__line"></span><span class="toggle__line"></span><span class="toggle__line"></span></div>
+          <div class="logo header__logo"><a class="header__logo-link"><img src="img/logo.png" alt="врынке.рф" class="logo-img header__logo-img"/></a></div>
+          <div class="header__list js-header__list">
+            <button class="button header__list-button js-list-button"></button>
+            <div class="header__nav-list">
+              <div class="header__nav-item header__nav-item--active"><a href="for-agent.html">Я — агент</a></div>
+              <div class="header__nav-item"><a href="for-contractor.html">Я — поставщик</a></div>
+              <div class="header__nav-item"><a href="catalog.html">Каталог предложений</a></div>
+              <div class="header__nav-item"><a href="regions-list.html">Регионы</a></div>
+            </div>
+            <div class="header__nav-list header__nav-list--mobile">
+              <div class="header__nav-item"><a href="about.html">О платформе</a></div>
+              <div class="header__nav-item"><a href="careers-list.html">Работать у нас</a></div>
+              <div class="header__nav-item"><a href="news-list.html">Новости</a></div>
+              <div class="header__nav-item"><a href="contact-us.html">Связаться с нами</a></div>
+            </div>
+          </div>
+          <div class="header__sign-in"><a href="#~" class="button header__button-account js-button-account"><img src="img/account-icon.png" alt="account-logo"/></a>
+            <div class="header__account-block js-account-block">
+              <ul class="header__account-list">
+                <li class="header__account-item"><a href="account-agent-edit-account.html">Редактировать профиль</a></li>
+                <li class="header__account-item"><a href="account-agent-message.html">Сообщения</a></li>
+                <li class="header__account-item"><a href="login.html">Выйти</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Crumbs-->
+      <div class="crumbs">
+        <div class="container">
+              <div class="crumbs__nav-block crumbs__block--active"><a href="" class="crumbs__nav-link crumbs__nav-link--prof">Профиль</a></div>
+              <div class="crumbs__nav-block"><a href="account-agent-message.html" class="crumbs__nav-link crumbs__nav-link--mes">Сообщения</a><span class="crumbs__nav-counter">25</span></div>
+              <div class="crumbs__nav-block"><a href="account-agent-fi-list.html" class="crumbs__nav-link crumbs__nav-link--fav">Избранное</a></div>
+              <div class="crumbs__nav-block"><a href="training.html" class="crumbs__nav-link crumbs__nav-link--training">Обучение</a></div>
+        </div>
+      </div>
+      <!-- Account edit-->
+      <section class="main-content account account__edit">
+        <div class="container">
+          <h1 class="main-content__title">Редактировать профиль</h1>
+          <div class="accountn__edit-block">
+            <form action="success-date.html" method="" id="">
+              <!-- Personal info-->
+              <h2 class="account__edit-name">Персональная информация</h2>
+              <div class="row account__input-block">
+                <div class="col-md-8 col-sm-12">
+                      <input type="text" name="name" placeholder="Иванов Иван Иванович" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                      <input type="text" name="id" placeholder="656565654654" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <select class="input">
+                    <option disable="disable">Высшее</option>
+                    <option>Среднее</option>
+                    <option>Среднее-специальное</option>
+                    <option>Низшее</option>
+                    <option>Никакое</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Registered address-->
+              <h3 class="account__edit-name account__edit-name--md">Адрес регистрации</h3>
+              <div class="row account__input-block">
+                <div class="col-md-4 col-sm-6">
+                      <input type="text" name="index" placeholder="125000" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input js-let-check"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                      <input type="text" name="region" placeholder="Московская область" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input js-let-check"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                      <input type="text" name="city" placeholder="Московская область" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input js-let-check"/>
+                </div>
+                <div class="col-sm-12">
+                      <input type="text" name="address" placeholder="Московская область" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input js-let-check"/>
+                </div>
+              </div>
+              <!-- The actual address-->
+              <div class="account__check-title">
+                <h3 class="account__edit-name account__edit-name--md">Фактический адрес (для направления корреспонденции)</h3>
+                    <div class="checkbox">
+                      <input type="checkbox" id="address" class="checkbox__input"/>
+                      <label for="address" class="checkbox__label">Соответствует адресу регистрации</label>
+                    </div>
+              </div>
+              <div class="row account__input-block">
+                <div class="col-md-4 col-sm-6">
+                      <input type="text" name="index" placeholder="125000" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input js-get-check"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                      <input type="text" name="region" placeholder="Московская область" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input js-get-check"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                      <input type="text" name="city" placeholder="Московская область" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input js-get-check"/>
+                </div>
+                <div class="col-sm-12">
+                      <input type="text" name="address" placeholder="Московская область" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input js-get-check"/>
+                </div>
+              </div>
+              <!-- Contact info-->
+              <h2 class="account__edit-name">Контактная информация</h2>
+              <div class="row account__input-block">
+                <div class="col-md-4 col-sm-6">
+                      <input type="tel" name="phone" placeholder="+7 (905) 123-45-67" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                      <input type="phone" name="mail" placeholder="656565654654" required="required" oninvalid="this.setCustomValidity('undefined')" oninput="setCustomValidity('')" class="input"/>
+                </div>
+              </div>
+              <div class="account__check-wrap">
+                <div class="account__input-block account__input-block--mb">
+                      <div class="checkbox">
+                        <input type="checkbox" id="js-check-status" class="checkbox__input"/>
+                        <label for="js-check-status" class="checkbox__label">Получить статус подтверждённого агента</label>
+                      </div>
+                  <div class="question">&#63;<span class="question__tooltip">После проверки данных специалистами врынке возле наименования вашей компании появится значок “подтверждено”. для получения статуса подтвержденного агента необходимо предоставить всю информацию и оплатить счет.</span></div>
+                  <div class="account__input-block__info">Стоимость услуги – <span class="account__check-get">0</span> рублей</div>
+                </div>
+              </div>
+              <div class="row account__input-block js-let-status">
+                <div class="col-md-4 col-sm-6">
+                  <input type="text" name="inn" placeholder="40702810638050013199" disabled="disabled" class="input"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <input type="text" name="bank" placeholder="ПАО &quot;Сбербанк России&quot;" disabled="disabled" class="input"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <input type="text" name="name" placeholder="Иванов Иван Иванович" disabled="disabled" class="input"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <input type="text" name="id" placeholder="656565654654" disabled="disabled" class="input"/>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <input type="text" name="id" placeholder="656565654654" disabled="disabled" class="input"/>
+                </div>
+              </div>
+              <div class="row account__input-block">
+                <div class="col-sm-4">
+                  <button class="button button--confirm-reg">Подтвердить изменения</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- Footer-->
+        </div>
+        <div class="prefooter">
+          <picture>
+            <source srcset="img/footer-img-main-mob.png" media="(max-width: 991px)" class="prefooter__img-block"/><img src="img/footer-img-main.png" alt="footer-img" class="prefooter__img-block"/>
+          </picture>
+        </div>
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="footer__content-wrap">
+                  <h2 class="footer__title js-footer-title">Информация и поддержка <span class="arrow"></span></h2>
+                  <ul class="footer__list">
+                    <li class="footer__list-item"><a href="privacy.html" class="footer__list-link">Политика конфиденциальности</a></li>
+                    <li class="footer__list-item"><a href="public-offer.html" class="footer__list-link">Публичная оферта</a></li>
+                    <li class="footer__list-item"><a href="news-list.html" class="footer__list-link">Новости</a></li>
+                    <li class="footer__list-item"><a href="contact-us.html" class="footer__list-link">Связаться с нами</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col">
+                <div class="footer__content-wrap">
+                  <h2 class="footer__title js-footer-title">Врынке <span class="arrow"></span></h2>
+                  <ul class="footer__list">
+                    <li class="footer__list-item"><a href="about.html" class="footer__list-link">О платформе</a></li>
+                    <li class="footer__list-item"><a href="careers-list.html" class="footer__list-link">Работать у нас</a></li>
+                    <li class="footer__list-item"><a href="partnership.html" class="footer__list-link">Сотрудничать с нами</a></li>
+                    <li class="footer__list-item"><a href="legal-info.html" class="footer__list-link">Юридическая информация</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col">
+                <div class="footer__content-wrap">
+                  <div class="logo footer__logo"><a href="index.html"><img src="img/footer-logo.png" alt="врынке.рф"/></a></div>
+                  <p class="footer__copy">&copy; Врынке, 2017. Все права защищены.</p>
+                  <div class="footer__social"><a href="#~" class="footer__social-icon footer__social-vk"></a><a href="#~" class="footer__social-icon footer__social-inst"></a><a href="#~" class="footer__social-icon footer__social-facebook"></a></div>
+                  <div class="footer__author-info">Проект создан - <a href="http://voidmedia.ru/" target="_blank" class="footer__author-link">Void media</a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Overlay-->
+        <div class="overlay"></div>
+        <!-- Scripts-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/project/script.js"></script>
+        <script src="js/project/nav-toggle.js"></script>
+        <script src="js/project/block-toggle.js"></script>
+        <script src="js/project/account-block.js"></script>
+      </section>
+    </div>
+  </body>
+</html>

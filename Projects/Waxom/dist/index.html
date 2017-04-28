@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compitable" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <!-- [if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  -->
+  <!-- [endif]-->
+</head>
+<body>
+  <!-- HEADER-->
+  <header id="header" class="header">
+    <div class="container-fluid">
+      <!-- SLIDER-->
+      <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <!-- slider img-->
+            <div class="item active">
+              <picture>
+                <source srcset="img/mob/md-header-slide1.jpg" media="(max-width: 767px)" class="img-responsive"/>
+                <source srcset="img/lg-header-slide1.jpg" media="(max-width: 1400px)" class="img-responsive"/>
+                <source srcset="img/header-slide1.jpg" media="(min-width: 1401px)" class="img-responsive"/>
+                <source srcset="img/header-slide1.jpg x2" class="img-responsive"/><img src="img/header-slide1.jpg" class="img-responsive"/>
+              </picture>
+            </div>
+          <!-- slider img-->
+            <div class="item">
+              <picture>
+                <source srcset="img/mob/md-header-slide2.jpg" media="(max-width: 767px)" class="img-responsive"/>
+                <source srcset="img/lg-header-slide2.jpg" media="(max-width: 1400px)" class="img-responsive"/>
+                <source srcset="img/header-slide2.jpg" media="(min-width: 1401px)" class="img-responsive"/>
+                <source srcset="img/header-slide2.jpg x2" class="img-responsive"/><img src="img/header-slide2.jpg" class="img-responsive"/>
+              </picture>
+            </div>
+          <!-- slider img-->
+            <div class="item">
+              <picture>
+                <source srcset="img/mob/md-header-slide3.jpg" media="(max-width: 767px)" class="img-responsive"/>
+                <source srcset="img/lg-header-slide3.jpg" media="(max-width: 1400px)" class="img-responsive"/>
+                <source srcset="img/header-slide3.jpg" media="(min-width: 1401px)" class="img-responsive"/>
+                <source srcset="img/header-slide3.jpg x2" class="img-responsive"/><img src="img/header-slide3.jpg" class="img-responsive"/>
+              </picture>
+            </div>
+          <!-- slider img-->
+            <div class="item">
+              <picture>
+                <source srcset="img/mob/md-header-slide4.jpg" media="(max-width: 767px)" class="img-responsive"/>
+                <source srcset="img/lg-header-slide4.jpg" media="(max-width: 1400px)" class="img-responsive"/>
+                <source srcset="img/header-slide4.jpg" media="(min-width: 1401px)" class="img-responsive"/>
+                <source srcset="img/header-slide4.jpg x2" class="img-responsive"/><img src="img/header-slide4.jpg" class="img-responsive"/>
+              </picture>
+            </div>
+          <!-- slider img-->
+            <div class="item">
+              <picture>
+                <source srcset="img/mob/md-header-slide5.jpg" media="(max-width: 767px)" class="img-responsive"/>
+                <source srcset="img/lg-header-slide5.jpg" media="(max-width: 1400px)" class="img-responsive"/>
+                <source srcset="img/header-slide5.jpg" media="(min-width: 1401px)" class="img-responsive"/>
+                <source srcset="img/header-slide5.jpg x2" class="img-responsive"/><img src="img/header-slide5.jpg" class="img-responsive"/>
+              </picture>
+            </div>
+        </div><a href="#myCarousel" data-slide="prev" class="carousel-control left"><span class="icon-custom-prev"></span></a><a href="#myCarousel" data-slide="next" class="carousel-control right"><span class="icon-custom-next"></span></a>
+      </div>
+    </div>
+    <!-- header-content-->
+    <div class="header-content">
+      <div class="container">
+        <!-- header navbar-->
+        <nav class="header-nav">
+          <!-- mob-nav-button-->
+          <button class="btn mob-nav"><span class="mob-nav__line"></span><span class="mob-nav__line"></span><span class="mob-nav__line"> </span></button>
+          <!-- header logo-->
+          <div class="header-nav__logo">
+            <h1 class="header-nav__logo-title">Waxon</h1>
+          </div>
+          <!-- header nav-->
+          <div class="header-nav__navbar">
+            <ul class="header-nav__navbar-list">
+              <li class="header-nav__navbar-list__item"><a href="#header">Home</a></li>
+              <li class="header-nav__navbar-list__item"><a href="#services">About Us</a></li>
+              <li class="header-nav__navbar-list__item"><a href="#projects">Portfolio</a></li>
+              <li class="header-nav__navbar-list__item no-mobile"><a href="#video-pres">Features</a></li>
+              <li class="header-nav__navbar-list__item"><a href="#mob-dev">Shortcodes</a></li>
+              <li class="header-nav__navbar-list__item no-mobile"><a href="#counters">Pricing</a></li>
+              <li class="header-nav__navbar-list__item"><a href="#posts">Blog</a></li>
+              <li class="header-nav__navbar-list__item"><a href="#footer">Contact</a></li>
+            </ul>
+            <div class="item__cart-group"><span class="cart-group__cart"></span><span class="cart-group__search"></span>
+              <input type="text" placeholder="search" name="search" class="cart-group__search-form"/>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- header jumbotron-->
+    <div class="header-jumb">
+      <h1 class="header-jumb__pre-title">Unique and Modern Design</h1>
+      <h1 class="header-jumb__title">Portfolio PSD Template</h1>
+      <p class="header-jumb__desc">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+      <button class="btn header-btn">Get started</button>
+    </div>
+  </header>
+  <!-- SERVICES-->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="row">
+        <!-- services-block-->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="services-block">
+            <div class="services-block__img-cont"><img src="img/serv-icon1.svg" alt=""/></div>
+            <h2 class="services-block__title">Web &#38; App Design</h2>
+            <p class="services-block__desc">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+          </div>
+        </div>
+        <!-- services-block-->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="services-block">
+            <div class="services-block__img-cont"><img src="img/serv-icon2.svg" alt=""/></div>
+            <h2 class="services-block__title">Development</h2>
+            <p class="services-block__desc">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+          </div>
+        </div>
+        <!-- services-block-->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="services-block">
+            <div class="services-block__img-cont"><img src="img/serv-icon3.svg" alt=""/></div>
+            <h2 class="services-block__title">Customization</h2>
+            <p class="services-block__desc">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+          </div>
+        </div>
+        <!-- services-block-->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="services-block">
+            <div class="services-block__img-cont"><img src="img/serv-icon4.svg" alt=""/></div>
+            <h2 class="services-block__title">Marketing</h2>
+            <p class="services-block__desc">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- REALIZE-->
+  <section class="realize">
+    <div class="container">
+      <h1 class="sec-title">Waxom is Realization of your Ideas.</h1>
+      <p class="sec-desc">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+      <!-- realize-slider-->
+      <div class="realize-slider__block carousel">
+        <ul class="carousel-wrapper">
+          <li class="realize-slide-img carousel-box"><img src="img/mini-slide-img1.jpg" alt="miniSlideImg1"/></li>
+          <li class="realize-slide-img carousel-box"><img src="img/mini-slide-img2.jpg" alt="miniSlideImg2"/></li>
+          <li class="realize-slide-img carousel-box"><img src="img/mini-slide-img3.jpg" alt="miniSlideImg3"/></li>
+        </ul>
+      </div>
+    </div>
+    <!-- realize footer-->
+    <div class="container-fluid">
+      <div class="realize-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-sm-9">
+              <div class="realize-footer__title"><span> Waxom</span> Multipurpose WordPress Theme</div>
+              <div class="realize-footer__desc">Don't Forget to Rate the Template. Thanks so much!</div>
+            </div>
+            <div class="col-md-2 col-sm-3">
+              <button class="btn now-btn">Purchase now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PROJECTS-->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h1 class="sec-title">Our Latest Projects.</h1>
+      <p class="sec-desc">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+      <ul class="project-tab__list">
+        <li title="filter-all" class="project-tab__list-item">All</li>
+        <li title="filter-web" class="project-tab__list-item">Web Design</li>
+        <li title="filter-mob" class="project-tab__list-item">Mobile App</li>
+        <li title="filter-ill" class="project-tab__list-item">Illustration</li>
+        <li title="filter-photo" class="project-tab__list-item">Photography</li>
+      </ul>
+      <div class="row row-inline">
+        <!-- project-block-->
+        <div class="col-sm-4 col-xs-6 filter-web">
+          <div class="project-block">
+            <div class="project-block__img"><img src="img/proj-img1.jpg" alt="proj-img1" class="img-responsive"/></div>
+            <div class="project-block__desc-wrapper"><span class="project-block__title">Claritas Etiam Processus</span><span class="project-block__desc">Photography, Nature</span></div>
+          </div>
+        </div>
+        <!-- project-block-->
+        <div class="col-sm-4 col-xs-6 filter-mob">
+          <div class="project-block">
+            <div class="project-block__img"><img src="img/proj-img2.jpg" alt="proj-img2" class="img-responsive"/></div>
+            <div class="project-block__desc-wrapper"><span class="project-block__title">Quam Nutamus Farum</span><span class="project-block__desc">Graphic Design, Mock-Up</span></div>
+          </div>
+        </div>
+        <!-- project-block-->
+        <div class="col-sm-4 col-xs-6 filter-photo">
+          <div class="project-block">
+            <div class="project-block__img"><img src="img/proj-img3.jpg" alt="proj-img3" class="img-responsive"/></div>
+            <div class="project-block__desc-wrapper"><span class="project-block__title">Usus Legentis Videntur</span><span class="project-block__desc">Photography, Holiday</span></div>
+          </div>
+        </div>
+        <!-- project-block-->
+        <div class="col-sm-4 col-xs-6 filter-ill">
+          <div class="project-block">
+            <div class="project-block__img"><img src="img/proj-img4.jpg" alt="proj-img4" class="img-responsive"/></div>
+            <div class="project-block__desc-wrapper"><span class="project-block__title">Claritas Etiam Processus</span><span class="project-block__desc">Photography, Nature</span></div>
+          </div>
+        </div>
+        <!-- project-block-->
+        <div class="col-sm-4 col-xs-6 filter-photo">
+          <div class="project-block">
+            <div class="project-block__img"><img src="img/proj-img5.jpg" alt="proj-img5" class="img-responsive"/></div>
+            <div class="project-block__desc-wrapper"><span class="project-block__title">Quam Nutamus Farum</span><span class="project-block__desc">Graphic Design, Mock-Up</span></div>
+          </div>
+        </div>
+        <!-- project-block-->
+        <div class="col-sm-4 col-xs-6 filter-ill">
+          <div class="project-block">
+            <div class="project-block__img"><img src="img/proj-img6.jpg" alt="proj-img6" class="img-responsive"/></div>
+            <div class="project-block__desc-wrapper"><span class="project-block__title">Usus Legentis Videntur</span><span class="project-block__desc">Photography, Holiday</span></div>
+          </div>
+        </div>
+        <!-- button-->
+        <button class="btn more-btn">Load More</button>
+      </div>
+    </div>
+  </section>
+  <!-- VIDEO PRESENTATION-->
+  <section id="video-pres" class="video-pres">
+    <div class="container-fluid">
+      <div class="video-pres__block">
+        <video id="video" src="082.mp4" onClick="stop()" class="video-pres__video"></video>
+        <div class="video-pres__block-wrapper"><span onClick="play()" class="video-pres__play"></span>
+          <h1 class="sec-title">Waxom Video Presentation</h1>
+          <p class="sec-desc">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- MOBILE DEVICES-->
+  <section id="mob-dev" class="mob-dev">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 col-sm-push-5">
+          <h2 class="sec-title">Excellent for Mobile Devices.</h2>
+          <p class="mob-dev__desc">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+          <ul class="mob-dev__list">
+            <li class="mob-dev__list-item">Nam liber tempor cum soluta nobis eleifend option;</li>
+            <li class="mob-dev__list-item">Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+            <li class="mob-dev__list-item">Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+            <li class="mob-dev__list-item">Investigationes demonstraverunt lectores</li>
+          </ul>
+        </div>
+        <div class="col-sm-5 col-sm-pull-7">
+          <div class="mob-dev__img"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- COUNTERS-->
+  <section id="counters" class="counters">
+    <div class="container">
+      <div class="counter-block__wrapper">
+        <!-- counter block-->
+        <div class="counter-block">
+          <div class="counter-block__img"><img src="img/client-icon1.svg" alt="client-icon1"/></div><span class="counter-block__count">3587</span><span class="counter-block__desc">Satisfied clients</span>
+        </div>
+        <!-- counter block-->
+        <div class="counter-block">
+          <div class="counter-block__img"><img src="img/client-icon2.svg" alt="client-icon2"/></div><span class="counter-block__count">207</span><span class="counter-block__desc">Cups of coffee</span>
+        </div>
+        <!-- counter block-->
+        <div class="counter-block">
+          <div class="counter-block__img"><img src="img/client-icon3.svg" alt="client-icon3"/></div><span class="counter-block__count">2500</span><span class="counter-block__desc">Blog post</span>
+        </div>
+        <!-- counter block-->
+        <div class="counter-block">
+          <div class="counter-block__img"><img src="img/client-icon4.svg" alt="client-icon4"/></div><span class="counter-block__count">873</span><span class="counter-block__desc">Likes </span>
+        </div>
+        <!-- counter block-->
+        <div class="counter-block">
+          <div class="counter-block__img"><img src="img/client-icon5.svg" alt="client-icon5"/></div><span class="counter-block__count">900</span><span class="counter-block__desc">We launched</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- POSTS-->
+  <section id="posts" class="posts">
+    <div class="container">
+      <h1 class="sec-title">Recent Posts.</h1>
+      <p class="sec-desc">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+      <div class="row">
+        <!-- post block-->
+        <div class="col-sm-4 col-xs-6">
+          <div class="post-block">
+            <div class="post-block__img"><img src="img/post-icon1.jpg" alt="post-icon1" class="img-responsive"/>
+              <div class="post-block__img-data"><span class="month-number">30</span><span class="month">sep</span></div>
+            </div>
+            <div class="post-block__desc-wrapper">
+              <h2 class="post-block__title"> Lorem ipsum dolor sit amet.</h2>
+              <p class="post-block__desc">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p><a href="#~" class="post-block__link">Read more</a>
+            </div>
+          </div>
+        </div>
+        <!-- post block-->
+        <div class="col-sm-4 col-xs-6">
+          <div class="post-block">
+            <div class="post-block__img"><img src="img/post-icon2.jpg" alt="post-icon2" class="img-responsive"/>
+              <div class="post-block__img-data"><span class="month-number">30</span><span class="month">sep</span></div>
+            </div>
+            <div class="post-block__desc-wrapper">
+              <h2 class="post-block__title"> Lorem ipsum dolor sit amet.</h2>
+              <p class="post-block__desc">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p><a href="#~" class="post-block__link">Read more</a>
+            </div>
+          </div>
+        </div>
+        <!-- post block-->
+        <div class="col-sm-4 col-xs-6">
+          <div class="post-block">
+            <div class="post-block__img"><img src="img/post-icon3.jpg" alt="post-icon3" class="img-responsive"/>
+              <div class="post-block__img-data"><span class="month-number">30</span><span class="month">sep</span></div>
+            </div>
+            <div class="post-block__desc-wrapper">
+              <h2 class="post-block__title"> Lorem ipsum dolor sit amet.</h2>
+              <p class="post-block__desc">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p><a href="#~" class="post-block__link">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PARTNERS-->
+  <section class="partners">
+    <div class="container">
+      <div class="partners-block__wrapper">
+        <div class="row row-inline">
+          <div class="col-xs-3">
+            <div class="partners-block__img"><img src="img/partner-logo1.png" alt="partner-logo1" class="img-responsive"/></div>
+          </div>
+          <div class="col-xs-3">
+            <div class="partners-block__img"><img src="img/partner-logo2.png" alt="partner-logo2" class="img-responsive"/></div>
+          </div>
+          <div class="col-xs-3">
+            <div class="partners-block__img"><img src="img/partner-logo3.png" alt="partner-logo3" class="img-responsive"/></div>
+          </div>
+          <div class="col-xs-3">
+            <div class="partners-block__img"><img src="img/partner-logo4.png" alt="partner-logo4" class="img-responsive"/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER-->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer__content-wrapper">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <h1 class="footer__logo">Waxon</h1>
+            <p class="footer__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p><a class="footer__link">Read more</a>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <h1 class="sec-title">Recent Posts</h1>
+            <ul class="footer__list">
+              <li class="footer-list__item"><span class="item-data">September 08, 2015</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>
+              <li class="footer-list__item"><span class="item-data">September 08, 2015</span>Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</li>
+              <li class="footer-list__item"><span class="item-data">September 08, 2015</span>Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <h1 class="sec-title">Our Twitter</h1>
+            <ul class="footer__list">
+              <li class="footer-list__item"><a href="mailto:@waxom.com">@waxom</a> Cum soluta nobis eleifend option congue nihil imperdiet doming<span class="item-data">20 days ago</span></li>
+              <li class="footer-list__item">Mirum est <a href="#~">#envato</a> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum<span class="item-data">20 days ago</span></li>
+              <li class="footer-list__item">Soluta nobis option <a href="#~" class="item-link">bit.ly/1Hniso7</a><span class="item-data">20 days ago</span></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <h1 class="sec-title">Dribbble Widget</h1>
+            <ul class="footer__list footer__img-list">
+              <li class="footer-list__item-img"><img src="img/footer-prev-img1.jpg" alt="footer-img1" class="img-responsive"/></li>
+              <li class="footer-list__item-img no-margin"><img src="img/footer-prev-img2.jpg" alt="footer-img2" class="img-responsive"/></li>
+              <li class="footer-list__item-img"><img src="img/footer-prev-img3.jpg" alt="footer-img3" class="img-responsive"/></li>
+              <li class="footer-list__item-img no-margin"><img src="img/footer-prev-img4.jpg" alt="footer-img4" class="img-responsive"/></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER BOTTOM-->
+    <div class="footer-bottom">
+      <div class="container">
+        <!-- footer bottom list left-->
+        <ul class="footer-bottom__list--left">
+          <li class="list--left__item">Copyright &copy; 2015 <a href="#~" class="another-link">Waxon</a></li>
+          <li class="list--left__item"><a href="#~">Privacy Policy</a></li>
+          <li class="list--left__item"><a href="#~">FAQ</a></li>
+          <li class="list--left__item"><a href="#~">Support</a></li>
+        </ul>
+        <!-- footer bottom list right-->
+        <ul class="footer-bottom__list--right">
+          <li class="list--right__item">Disigned by <a href="#~" class="another-link">ThemeFire</a></li>
+          <li class="list--right__item">Only on <a href="#~" class="another-link">Envato Market</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/flipster.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $('.realize-slider__block').flipster({
+      loop: true,
+      style: 'flat',
+      spacing: -0.5,
+      autoplay: false,
+      touch: true,
+      itemContainer: 'ul',
+      itemSelector: 'li'
+    });
+  </script>
+</body>
